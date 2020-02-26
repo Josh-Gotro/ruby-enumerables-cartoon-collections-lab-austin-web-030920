@@ -35,6 +35,19 @@ end
 #   nil
 # end 
 
+def find_the_cheese(a)
+  a.map do |cheese| 
+    if a.include?("cheddar") 
+      return "cheddar"
+    else if a.include?("gouda") 
+      return "gouda"
+    else if a.include?("camembert") 
+      return "camembert"
+    end end end 
+  end
+nil
+end
+
 # cheese_types = ["cheddar", "gouda", "camembert"]
 # banana
 # cheddar
